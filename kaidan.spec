@@ -1,11 +1,11 @@
-%define snapshot 20200312
-%define commit 0c006512dfc0312c3f8d8c688657d875f2085cc2
-
 Name:		kaidan
-Version:	0.0
-Release:	0.%{snapshot}.1
+Version:	0.5.0
+Release:	1
 Summary:	XMPP based messenger for Plasma Mobile
-Source0:	https://invent.kde.org/kde/kaidan/-/archive/master/kaidan-%{snapshot}.tar.bz2
+Url:      https://www.kaidan.im
+Source0:  https://download.kde.org/stable/kaidan/%{version}/%{name}-%{version}.tar.xz
+# Mirror
+#Source0:	https://invent.kde.org/kde/kaidan/-/archive/master/kaidan-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:	cmake
@@ -36,7 +36,7 @@ BuildRequires:	cmake(ZXing)
 XMPP based messenger for Plasma Mobile
 
 %prep
-%autosetup -p1 -n %{name}-master-%{commit}
+%autosetup -p1 -n %{name}-%{version}
 %cmake_kde5 -G Ninja
 
 %build
@@ -52,4 +52,3 @@ XMPP based messenger for Plasma Mobile
 %{_datadir}/kaidan
 %{_datadir}/knotifications5/kaidan.notifyrc
 %{_datadir}/metainfo/im.kaidan.kaidan.appdata.xml
-
