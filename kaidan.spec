@@ -22,6 +22,7 @@ BuildRequires:	cmake(Qt5Xml)
 BuildRequires:	cmake(Qt5Multimedia)
 BuildRequires:	cmake(Qt5Positioning)
 BuildRequires:	cmake(Qt5Location)
+BuildRequires:	qt5-qtlocation
 BuildRequires:	cmake(KF5Kirigami2)
 BuildRequires:	cmake(Qt5QuickCompiler)
 BuildRequires:	cmake(KF5Notifications)
