@@ -1,15 +1,13 @@
 Name:		kaidan
 Version:	0.5.0
-Release:	1
+Release:	2
 Summary:	XMPP based messenger for Plasma Mobile
-Url:      https://www.kaidan.im
-Source0:  https://download.kde.org/stable/kaidan/%{version}/%{name}-%{version}.tar.xz
+Url:		https://www.kaidan.im
+Source0:	https://download.kde.org/stable/kaidan/%{version}/%{name}-%{version}.tar.xz
 # Mirror
 #Source0:	https://invent.kde.org/kde/kaidan/-/archive/master/kaidan-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
-BuildRequires:	cmake
-BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Concurrent)
@@ -32,12 +30,13 @@ BuildRequires:	cmake(Perl)
 BuildRequires:	cmake(Qt5LinguistTools)
 BuildRequires:	cmake(QXmpp)
 BuildRequires:	cmake(ZXing)
+Requires:	qt5-qtlocation
 
 %description
-XMPP based messenger for Plasma Mobile
+XMPP based messenger for Plasma Mobile.
 
 %prep
-%autosetup -p1 -n %{name}-%{version}
+%autosetup -p1
 %cmake_kde5 -G Ninja
 
 %build
