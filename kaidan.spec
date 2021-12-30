@@ -45,7 +45,7 @@ XMPP based messenger for Plasma Mobile.
 
 %files
 %{_bindir}/kaidan
-%{_datadir}/applications/kaidan.desktop
+%{_datadir}/applications/im.kaidan.kaidan.desktop
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/kaidan
 %{_datadir}/knotifications5/kaidan.notifyrc
