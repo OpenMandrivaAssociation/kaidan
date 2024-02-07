@@ -1,15 +1,12 @@
 Name:		kaidan
-Version:	0.8.0
-Release:	4
+Version:	0.9.1
+Release:	1
 Summary:	XMPP based messenger for Plasma Mobile
 Url:		https://www.kaidan.im
 Source0:	https://invent.kde.org/network/kaidan/-/archive/v%{version}/kaidan-v%{version}.tar.bz2
 License:	GPLv3
 Group:		Applications/Productivity
-# (tpg) patches from upstream
-Patch0:		https://invent.kde.org/network/kaidan/-/commit/9a2f88779064b46ae097a354c97d657901f47d01.patch
-Patch1:		https://invent.kde.org/network/kaidan/-/commit/c92fe3125c08e61b454b41f151b435a6a9e6da4b.patch
-Patch2:		https://invent.kde.org/network/kaidan/-/commit/dc41a3f3850308d5204134ae08e66f20a58195f9.patch
+
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Concurrent)
