@@ -31,6 +31,7 @@ BuildRequires:	cmake(PkgConfig)
 BuildRequires:	cmake(Perl)
 BuildRequires:	cmake(Qt5LinguistTools)
 BuildRequires:	cmake(QXmpp)
+BuildRequires:	cmake(QXmppOmemoQt5)
 BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(KF5QQC2DesktopStyle)
 Requires:	qt5-qtlocation
