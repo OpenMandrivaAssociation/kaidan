@@ -53,7 +53,9 @@ XMPP based messenger for Plasma Mobile.
 %install
 %ninja_install -C build
 
-%files
+%find_lang %{name} --with-qt
+
+%files -f %{name}.lang
 %{_bindir}/kaidan
 %{_datadir}/applications/im.kaidan.kaidan.desktop
 %{_datadir}/icons/hicolor/*/*/*
