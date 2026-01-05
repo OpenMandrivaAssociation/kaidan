@@ -37,6 +37,7 @@ BuildRequires:	cmake(QXmppQt6)
 BuildRequires:	cmake(QXmppOmemoQt6)
 BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(KF6QQC2DesktopStyle)
+BuildRequires:	gomp-devel
 Requires:	kirigami
 
 %description
