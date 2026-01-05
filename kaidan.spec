@@ -17,6 +17,7 @@ BuildRequires:	cmake(Qt6Qml)
 BuildRequires:	cmake(Qt6Quick)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Test)
 BuildRequires:	cmake(Qt6QuickControls2)
 BuildRequires:	cmake(Qt6Xml)
 BuildRequires:	cmake(Qt6Multimedia)
@@ -39,6 +40,7 @@ BuildRequires:	cmake(QXmppOmemoQt6)
 BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(KF6QQC2DesktopStyle)
 BuildRequires:	cmake(KDSingleApplication-qt6)
+BuildRequires:	pkgconfig(icu-uc)
 BuildRequires:	gomp-devel
 Requires:	kirigami
 
