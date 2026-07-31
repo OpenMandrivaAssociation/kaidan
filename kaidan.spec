@@ -1,6 +1,6 @@
 Name:		kaidan
-Version:	0.14.0
-Release:	2
+Version:	0.16.0
+Release:	1
 Summary:	XMPP based messenger for Plasma Mobile
 Url:		https://www.kaidan.im
 Source0:	https://invent.kde.org/network/kaidan/-/archive/v%{version}/kaidan-v%{version}.tar.bz2
