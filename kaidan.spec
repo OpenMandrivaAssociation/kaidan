@@ -44,6 +44,7 @@ BuildRequires:	cmake(ZXing)
 BuildRequires:	cmake(KF6QQC2DesktopStyle)
 BuildRequires:	cmake(KDSingleApplication-qt6)
 BuildRequires:	pkgconfig(icu-uc)
+BuildRequires:	pkgconfig(gstreamer-1.0)
 BuildRequires:	gomp-devel
 Requires:	kirigami
 
