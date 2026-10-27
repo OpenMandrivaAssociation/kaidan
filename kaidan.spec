@@ -1,3 +1,7 @@
+# Qt6GLVideoItem is registered when qml6glsink is loaded. It is not a
+# qmldir on disk, so the generated QML require cannot be satisfied.
+%global __requires_exclude ^qml\\(org\\.freedesktop\\.gstreamer\\.Qt6GLVideoItem\\)$
+
 Name:		kaidan
 Version:	0.16.0
 Release:	3
@@ -47,6 +51,7 @@ BuildRequires:	pkgconfig(icu-uc)
 BuildRequires:	pkgconfig(gstreamer-1.0)
 BuildRequires:	gomp-devel
 Requires:	kirigami
+Requires:	gstreamer1.0-plugins-good-Qt6
 
 %description
 XMPP based messenger for Plasma Mobile.
